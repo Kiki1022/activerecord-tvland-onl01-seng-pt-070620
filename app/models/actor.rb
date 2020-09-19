@@ -4,7 +4,6 @@ class Actor < ActiveRecord::Base
   has_many :shows, through: :characters
   
     def full_name
-      binding.pry
       fullname = []
       fullname.push(self.first_name)
       fullname.push(self.last_name)
